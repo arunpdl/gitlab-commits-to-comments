@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gitlab Commits to Comments Options</title>
+  </head>
+  <body>
+    <label>
+      <input type="checkbox" id="avoidMergeCommits" />
+      Do not include merge commits (i.e. the ones beginning with 'Merge branch
+      "branchName" into "anotherBranchName"')
+    </label>
+    <br />
+    <br />
+    <label>
+      <input type="checkbox" id="copyClipboard" />
+      Copy content to clipboard
+    </label>
+    <br />
+    <br />
+    <button id="save">Save</button>
+    <br />
+    <br />
+    <div id="status"></div>
+    <br />
+    <script src="options.js"></script>
+  </body>
+</html>

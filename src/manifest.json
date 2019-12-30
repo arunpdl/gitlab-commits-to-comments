@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Gitlab Commits to Comments",
+  "version": "0.1",
+  "author": "arunpdl",
+  "description": "Avoid the hassle of having to copy your commits one by one into the merge request description field on gitlab",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "120": "icon120.png",
+    "512": "icon512.png"
+  },
+  "permissions": ["tabs", "contextMenus", "clipboardWrite", "storage"],
+  "web_accessible_resources": ["*.html"]
+}
